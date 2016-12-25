@@ -2,9 +2,9 @@
 
 官网英文原文地址：http://dev.px4.io/advanced-gimbal-control.html
 
-PX4 contains a generic mount/gimbal control driver with different input and output methods. Any input can be selected to drive any output.
+PX4包含一个通用的框架，用输入输出的方法来控制驱动器. 任何一个输入都可以被任何一个输出来控制.
 
-First, make sure the driver runs, using `vmount start`, then configure its parameters.
+首先, make sure the driver runs, using `vmount start`, then configure its parameters.
 
 ## Parameters
 The parameters are described in [src/drivers/vmount/vmount_params.c](https://github.com/PX4/Firmware/blob/master/src/drivers/vmount/vmount_params.c). The most important ones are the input (`MNT_MODE_IN`) and the output (`MNT_MODE_OUT`) mode. By default, the input is disabled. Any input method can be selected to drive any of the available outputs.
